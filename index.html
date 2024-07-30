@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness website</title>
+</head>
+<link
+  href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Lato&family=Roboto+Mono&family=Ubuntu&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* css reset */
+  body {
+    /* background-color: rgb(155, 94, 104); */
+    background: url('./image/img.jpg');
+    /* height: 100%; */
+    font-family: 'Baloo Tamma 2', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  .left {
+    /* border: 2px solid red; */
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 44px;
+  }
+
+  .left img {
+    line-height: 0px;
+    width: 50px;
+    filter: invert(100%);
+  }
+
+  .left div {
+    text-align: center;
+    line-height: 0px;
+    font-size: 14px;
+  }
+
+  .mid {
+    /* border: 2px solid green; */
+    /* text-align: center; */
+    display: block;
+    width: 37%;
+    margin: 20px auto;
+  }
+
+  .right {
+    /* border: 2px solid yellow; */
+    /* text-align: center; */
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+  }
+
+  .navbar {
+    /* color: white; */
+    display: inline-block;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 18px;
+    /* color: white; */
+  }
+
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    /* font-size: 18px; */
+    padding: 8px 7px;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+  }
+
+  .btn {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin: 0px 10px;
+    padding: 5px 0px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    width: 90px;
+  }
+
+  .btn:hover {
+    background-color: rgb(56, 54, 54);
+  }
+
+  .container {
+    /* border: 2px solid white; */
+    margin: 61px 11px;
+    padding: 44px 0px;
+    width: 36%;
+    border-radius: 9px
+  }
+  .formgroup input{
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 0px;
+    margin: 3px 88px;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+  h2{
+    text-align: center;
+  }
+  .container button{
+    display: block;
+    width: 62%;
+    margin: 5px auto;
+    font-size: 17px;
+    padding: 0px;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <!-- left box for logo -->
+    <div class="left">
+      <img src="./image/logo.png" alt="">
+      <div>Aman Fitness</div>
+    </div>
+    <!-- mid box for nav bar -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Fitness calculator</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+      <button class="btn">Call us now</button>
+      <button class="btn">Email us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h2>Aapka sath hamara vikas</h2>
+    <form action="noaction.php">
+      <div class="formgroup">
+        <input type="text" name="Name" placeholder="Enter your Name">
+      </div>
+      <div class="formgroup">
+        <input type="email" name="Email" placeholder="Enter your Email">
+      </div>
+      <div class="formgroup">
+        <input type="text" name="Name" placeholder="Enter your Gender">
+      </div>
+      <div class="formgroup">
+        <input type="text" name="Name" placeholder="Enter your Locality">
+      </div>
+      <button class="btn" id="bt">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
